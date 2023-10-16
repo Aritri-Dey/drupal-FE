@@ -9,7 +9,6 @@ regions:
   nav_main: 'Main navigation region'
   nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   breadcrumb: Breadcrumbs
-  # main_slider: Main Slider
   content: 'Main content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
@@ -20,5 +19,4 @@ features:
   - favicon
   - logo
 libraries:
-  # - lilac/global-style
   - lilac/slick

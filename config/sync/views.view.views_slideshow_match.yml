@@ -1,17 +1,18 @@
-uuid: ccfe3666-9611-44a7-a7c1-ad0b622e9075
+uuid: 0f675425-2396-4ebf-934c-19f771b22bb5
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_match_carousel_image
+    - image.style.wide
     - node.type.match
   module:
     - image
     - node
-    - slick
     - user
-id: match_block
-label: 'Match block'
+    - views_slideshow
+id: views_slideshow_match
+label: 'Views Slideshow match'
 module: views
 description: ''
 tag: ''
@@ -24,71 +25,8 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Match block'
+      title: 'Views Slideshow match'
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         field_match_carousel_image:
           id: field_match_carousel_image
           table: node__field_match_carousel_image
@@ -139,10 +77,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: slick_image
+          type: image
           settings:
-            image_style: ''
             image_link: ''
+            image_style: wide
             image_loading:
               attribute: lazy
           group_column: ''
@@ -156,9 +94,10 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: none
+        type: some
         options:
           offset: 0
+          items_per_page: 5
       exposed_form:
         type: basic
         options:
@@ -217,11 +156,81 @@ display:
           value:
             match: match
       style:
-        type: default
+        type: slideshow
         options:
-          grouping: {  }
           row_class: ''
           default_row_class: true
+          slideshow_skin: default
+          slideshow_type: views_slideshow_cycle
+          widgets:
+            top:
+              views_slideshow_controls:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_controls_text
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+              views_slideshow_pager:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_pager_fields
+                views_slideshow_pager_fields:
+                  views_slideshow_pager_fields_fields:
+                    field_match_carousel_image: 0
+                  views_slideshow_pager_fields_hover: 0
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
+            bottom:
+              views_slideshow_controls:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_controls_text
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+              views_slideshow_pager:
+                enable: true
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_pager_fields
+                views_slideshow_pager_fields:
+                  views_slideshow_pager_fields_fields:
+                    field_match_carousel_image: 0
+                  views_slideshow_pager_fields_hover: 0
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
+          views_slideshow_cycle:
+            effect: fade
+            transition_advanced: 0
+            timeout: '5000'
+            speed: '700'
+            delay: '0'
+            sync: 1
+            random: 0
+            pause: 1
+            pause_on_click: 0
+            action_advanced: 0
+            start_paused: 0
+            remember_slide: 0
+            remember_slide_days: '1'
+            pause_when_hidden: 0
+            pause_when_hidden_type: full
+            amount_allowed_visible: ''
+            nowrap: 0
+            fixed_height: 1
+            items_per_slide: '1'
+            items_per_slide_first: 0
+            items_per_slide_first_number: '1'
+            wait_for_image_load: 1
+            wait_for_image_load_timeout: '3000'
+            cleartype: 0
+            cleartypenobg: 0
       row:
         type: fields
       query:
@@ -233,7 +242,6 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      css_class: match-slider
       header: {  }
       footer: {  }
       display_extenders: {  }
