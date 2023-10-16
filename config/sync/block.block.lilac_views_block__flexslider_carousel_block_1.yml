@@ -1,0 +1,24 @@
+uuid: 2eeec877-53d6-4edd-9027-67c84e451080
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.flexslider_carousel
+  module:
+    - views
+  theme:
+    - lilac
+id: lilac_views_block__flexslider_carousel_block_1
+theme: lilac
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:flexslider_carousel-block_1'
+settings:
+  id: 'views_block:flexslider_carousel-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

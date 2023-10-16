@@ -1,0 +1,39 @@
+uuid: 68cbabdf-22ce-4f9b-8d72-bd36bacb43dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_team1_abbr_
+field_name: field_team1_abbr_
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: IND
+      label: IND
+    -
+      value: PAK
+      label: PAK
+    -
+      value: NZ
+      label: NZ
+    -
+      value: SA
+      label: SA
+    -
+      value: WI
+      label: WI
+    -
+      value: SLC
+      label: SLC
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

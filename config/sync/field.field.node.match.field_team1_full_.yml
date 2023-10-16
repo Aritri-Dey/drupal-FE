@@ -1,0 +1,21 @@
+uuid: 0d8ffe68-4cbf-4a4d-848f-391505090b39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team1_full_
+    - node.type.match
+  module:
+    - options
+id: node.match.field_team1_full_
+field_name: field_team1_full_
+entity_type: node
+bundle: match
+label: Team1(full)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

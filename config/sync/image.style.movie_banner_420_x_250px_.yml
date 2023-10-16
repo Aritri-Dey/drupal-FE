@@ -1,0 +1,15 @@
+uuid: 62aefeb9-8d9a-4ef1-9f48-b84f4c91ed61
+langcode: en
+status: true
+dependencies: {  }
+name: movie_banner_420_x_250px_
+label: 'movie banner (420 x 250px)'
+effects:
+  feede3fd-67dc-427a-9528-0b19242705ab:
+    uuid: feede3fd-67dc-427a-9528-0b19242705ab
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 420
+      height: 250
+      anchor: center-center

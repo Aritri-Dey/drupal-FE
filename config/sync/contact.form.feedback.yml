@@ -1,0 +1,14 @@
+uuid: 60651edc-66a0-461a-8ac5-f0b56e31b649
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - dey.aritri209@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

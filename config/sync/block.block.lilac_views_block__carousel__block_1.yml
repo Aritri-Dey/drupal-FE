@@ -1,0 +1,24 @@
+uuid: 8a377a87-8088-4a28-932d-3013eee4efdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.carousel_
+  module:
+    - views
+  theme:
+    - lilac
+id: lilac_views_block__carousel__block_1
+theme: lilac
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:carousel_-block_1'
+settings:
+  id: 'views_block:carousel_-block_1'
+  label: 'carousel '
+  label_display: visible
+  provider: views
+  views_label: 'carousel '
+  items_per_page: none
+visibility: {  }

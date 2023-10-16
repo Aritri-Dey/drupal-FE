@@ -1,0 +1,31 @@
+# global-style:
+#   version: 1.x
+#   css:
+#     theme:
+#       # css/style.css: {}
+#       /libraries/slick/slick.css: {}
+#       css/slick-theme.css: {}
+
+
+#   js:
+#     # js/app.js: {}
+#     # js/popup.js: {}
+#     /libraries/slick/slick.min.js: {}
+
+#   dependencies:
+#     - core/Drupal
+#     - core/jquery
+#     # - core/once
+#     # - core/drupalSettings
+    
+
+slick:
+  css:
+    theme:
+      css/slick.css: {}
+      css/slick-theme.css: {}
+      css/custom.css: {}
+  js:
+    js/slick.min.js: {}
+    js/custom.js: {}
+    js/slider.js: {}

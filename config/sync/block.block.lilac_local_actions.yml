@@ -1,0 +1,20 @@
+uuid: 35b4a469-2984-4a97-8b0e-dea16b0a371d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lilac
+_core:
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: lilac_local_actions
+theme: lilac
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

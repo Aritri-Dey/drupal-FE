@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: c6791fe8-290a-4222-8aed-55a3b547c313
+name: 'Drupal FE'
+mail: dey.aritri209@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /match-homepage
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
