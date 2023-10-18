@@ -1,0 +1,23 @@
+uuid: 7025ea45-63fc-47bf-89c5-54f9cfd5626c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - gold
+_core:
+  default_config_hash: HZJ8894mYbX0pdeltUdfnQjONb-BnkflWDqEm_x13m4
+id: gold_search_form
+theme: gold
+region: site_logo
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

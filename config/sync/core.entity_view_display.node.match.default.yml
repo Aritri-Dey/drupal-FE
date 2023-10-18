@@ -1,0 +1,95 @@
+uuid: 2608384d-a40c-4982-9005-964afe259ca3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.match.field_date_and_time_of_match
+    - field.field.node.match.field_description
+    - field.field.node.match.field_location
+    - field.field.node.match.field_match_carousel_image
+    - field.field.node.match.field_team1_abbr_
+    - field.field.node.match.field_team1_full_
+    - field.field.node.match.field_team2_abbr_
+    - field.field.node.match.field_team2_full_
+    - image.style.slick_media
+    - node.type.match
+  module:
+    - datetime
+    - image
+    - options
+    - text
+    - user
+id: node.match.default
+targetEntityType: node
+bundle: match
+mode: default
+content:
+  field_date_and_time_of_match:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_match_carousel_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: slick_media
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_team1_abbr_:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_team1_full_:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_team2_abbr_:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_team2_full_:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

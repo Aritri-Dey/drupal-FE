@@ -1,0 +1,19 @@
+slick:
+  css:
+    theme:
+      css/slick.css: {}
+      css/slick-theme.css: {}
+      css/main.css: {}
+      # css/custom.css: {}
+  js:
+    # js/slick.min.js: {}
+    js/custom.js: {}
+    # js/slider.js: {}
+    # js/slick.js: {}
+    https://code.jquery.com/jquery-1.11.0.min.js: {type: external}
+    https://code.jquery.com/jquery-migrate-1.2.1.min.js: {type: external}
+  dependencies:
+    - core/Drupal
+    - core/jquery
+    - core/once
+    - core/drupalSettings

@@ -1,0 +1,22 @@
+uuid: af1ad498-b034-4c5b-a565-1175802a00d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lilac
+_core:
+  default_config_hash: a0Yyx1GeyKarZ4T_yXQBR_ZFKnXiFLtxAb6gWLd8nr0
+id: lilac_content
+theme: lilac
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

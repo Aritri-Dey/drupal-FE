@@ -1,0 +1,39 @@
+uuid: 84b65c7e-32a2-4529-8660-e0e87f603e9a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_team2_full_
+field_name: field_team2_full_
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: INDIA
+      label: INDIA
+    -
+      value: PAKISTAN
+      label: PAKISTAN
+    -
+      value: 'NEW ZEALAND'
+      label: 'NEW ZEALAND'
+    -
+      value: 'SOUTH AFRICA'
+      label: 'SOUTH AFRICA'
+    -
+      value: 'WEST INDIES'
+      label: 'WEST INDIES'
+    -
+      value: 'SRI LANKA'
+      label: 'SRI LANKA'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

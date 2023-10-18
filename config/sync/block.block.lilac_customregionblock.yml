@@ -1,0 +1,30 @@
+uuid: 8814dbf3-6772-4b05-8c5d-42d2adb30bcb
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c7955ecb-4068-439f-a537-395345128d3c'
+  module:
+    - block_content
+    - system
+  theme:
+    - lilac
+id: lilac_customregionblock
+theme: lilac
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:c7955ecb-4068-439f-a537-395345128d3c'
+settings:
+  id: 'block_content:c7955ecb-4068-439f-a537-395345128d3c'
+  label: 'Custom region block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/to-do\r\n/hello-world\r\n/custom-render\r\n/movies\r\n/movie-list-new"
